@@ -1,0 +1,182 @@
+! Title: URL Parameter Removal
+! Description: Comprehensive list of tracking parameters to remove from URLs
+! Homepage: https://github.com/geeknik/ublock-privacy-filters
+! Author: https://x.com/geeknik
+! Last modified: 2024-10-23
+! License: MIT
+
+! Generic Analytics Parameters
+*$removeparam=/^ga_/
+*$removeparam=/^utm_/
+*$removeparam=/^_ga/
+*$removeparam=/^_gl/
+*$removeparam=/^_gac/
+*$removeparam=/^gclid/
+*$removeparam=/^gclsrc/
+*$removeparam=/^wbraid/
+*$removeparam=/^gbraid/
+*$removeparam=/^dclid/
+
+! Facebook/Meta Platform
+*$removeparam=/^fb_/
+*$removeparam=/^fbclid/
+*$removeparam=/^_fbp/
+*$removeparam=/^messenger_/
+*$removeparam=/^ig_/
+
+! Microsoft/Bing
+*$removeparam=msclkid
+*$removeparam=/^ms_/
+*$removeparam=/^MSYS_/
+*$removeparam=/^mkt_/
+
+! Adobe Analytics
+*$removeparam=/^s_/
+*$removeparam=/^adobe_/
+*$removeparam=/^omniture_/
+*$removeparam=/^sc_/
+
+! Other Analytics Platforms
+*$removeparam=/^mp_/
+*$removeparam=/^mixpanel_/
+*$removeparam=/^heap[-_]/
+*$removeparam=/^amplitude_/
+*$removeparam=/^clarity_/
+*$removeparam=/^hotjar_/
+*$removeparam=/^optimizely_/
+
+! Social Media Tracking
+*$removeparam=/^twclid/
+*$removeparam=/^twitter_/
+*$removeparam=/^t_/
+*$removeparam=/^ttclid/
+*$removeparam=/^tt_/
+*$removeparam=/^tiktok_/
+*$removeparam=/^li_/
+*$removeparam=/^linkedin_/
+
+! E-commerce & Marketplace
+! Amazon
+||amazon.*$removeparam=/^pd_rd_/
+||amazon.*$removeparam=/^pf_rd_/
+||amazon.*$removeparam=/^_encoding/
+||amazon.*$removeparam=/^tag/
+||amazon.*$removeparam=/^ref_/
+||amazon.*$removeparam=/^sprefix/
+||amazon.*$removeparam=/^aaxitk/
+||amazon.*$removeparam=/^smid/
+
+! Shopify
+*$removeparam=/^_sh/
+*$removeparam=/^_pos/
+*$removeparam=/^_sid/
+*$removeparam=/^_rid/
+*$removeparam=/^_scid/
+
+! Enterprise Marketing
+*$removeparam=/^sfdc_/
+*$removeparam=/^salesforce_/
+*$removeparam=/^marketo_/
+*$removeparam=/^eloqua_/
+*$removeparam=/^hubspot_/
+*$removeparam=/^hs_/
+
+! Session & User Tracking
+*$removeparam=/^sid/
+*$removeparam=/^session_/
+*$removeparam=/^visitor_/
+*$removeparam=/^client_/
+*$removeparam=/^user_/
+
+! Behavioral Tracking
+*$removeparam=/^click_/
+*$removeparam=/^scroll_/
+*$removeparam=/^view_/
+*$removeparam=/^watch_/
+*$removeparam=/^interaction_/
+
+! Device & Technical
+*$removeparam=/^device_/
+*$removeparam=/^browser_/
+*$removeparam=/^platform_/
+*$removeparam=/^screen_/
+*$removeparam=/^resolution_/
+
+! Location Tracking
+*$removeparam=/^geo_/
+*$removeparam=/^location_/
+*$removeparam=/^country_/
+*$removeparam=/^region_/
+*$removeparam=/^city_/
+*$removeparam=/^postal_/
+*$removeparam=/^zip_/
+*$removeparam=/^lat/
+*$removeparam=/^lon/
+
+! A/B Testing
+*$removeparam=/^test_/
+*$removeparam=/^experiment_/
+*$removeparam=/^variant_/
+*$removeparam=/^split_/
+*$removeparam=/^ab_/
+*$removeparam=/^abc_/
+
+! Content & Site Parameters
+*$removeparam=/^ref_/
+*$removeparam=/^source_/
+*$removeparam=/^medium_/
+*$removeparam=/^campaign_/
+*$removeparam=/^content_/
+*$removeparam=/^term_/
+
+! Site-Specific Rules
+! YouTube
+||youtube.com$removeparam=feature
+||youtube.com$removeparam=kw
+||youtube.com$removeparam=/^ab_channel/
+||youtube.com$removeparam=list
+||youtube.com$removeparam=index
+||youtube.com$removeparam=/^t$/
+
+! Facebook
+||facebook.com$removeparam=refsrc
+||facebook.com$removeparam=hrc
+||facebook.com$removeparam=/^ref$/
+
+! Twitter/X
+||twitter.com$removeparam=/^ref_/
+||twitter.com$removeparam=/^src/
+||twitter.com$removeparam=/^t$/
+
+! LinkedIn
+||linkedin.com$removeparam=trackingId
+||linkedin.com$removeparam=trk
+||linkedin.com$removeparam=/^lgw_/
+
+! Google
+||google.*$removeparam=/^ved/
+||google.*$removeparam=/^ei/
+||google.*$removeparam=/^sei/
+||google.*$removeparam=/^gws_rd/
+||google.*$removeparam=/^gs_/
+
+! Bing
+||bing.com$removeparam=cvid
+||bing.com$removeparam=form
+||bing.com$removeparam=sk
+||bing.com$removeparam=sp
+||bing.com$removeparam=sc
+||bing.com$removeparam=qs
+||bing.com$removeparam=pq
+
+! Generic Tracking
+*$removeparam=/^tracking_/
+*$removeparam=/^track_/
+*$removeparam=/^trace_/
+*$removeparam=/^analytics_/
+*$removeparam=/^pixel_/
+*$removeparam=/^affiliate_/
+*$removeparam=/^ref/
+*$removeparam=/^source/
+*$removeparam=/^medium/
+*$removeparam=/^campaign/
